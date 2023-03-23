@@ -1,4 +1,8 @@
-esta es la primer linea del archivo, agrego esto
+esta es la primer linea del archivo, 
 ahora si es la segunda linea final
 
-Tmb esto
+
+Tmb esto, algo ams
+otra
+
+vamos a agregar estog
