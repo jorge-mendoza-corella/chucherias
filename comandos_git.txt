@@ -33,6 +33,7 @@ git pull : es un git fetch y un git merge al mismo tiempo
 
 
 
+algo mas
 
 
 
