@@ -32,3 +32,12 @@ git merge : hace una mezcla del repo local con mis archivos de trabajo
 git pull : es un git fetch y un git merge al mismo tiempo
 
 
+
+NOTAS: 
+- cuando no se dan parametros a:
+git show : muestra los cambios en los ultimos dos commits, el actual (HEAD) y el anterior, al dar parametros como el commit id o el archivo se muestra el detalle de ese parametro
+git log : muestra todo el historial de cambios, al dar parametros como el commit id o el archivo se muestra el detalle de ese parametro
+git diff se puede usar con lo siguientes parametros:
+    git diff --cached : muestra la diferencia entre el archivo local y el archivo en staging
+    git diff --staged : muestra la diferencia entre el archivo en staging y el archivo en master
+    git diff HEAD: muestra la diferencia entre el archivo local y el archivo en master
