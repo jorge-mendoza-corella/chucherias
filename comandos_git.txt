@@ -5,11 +5,8 @@ git status : muestra el estado de los archivos, pueden estar en untraked, stagin
 git show : para ver los cambios en un commit, archivo, ver cambios entre commits
 git diff : para ver la diferencia entre dos archivos, commit archivo
 git log : para ver todo el historial de cambios, se puede agregar el parametro --oneline o --stat
-git rm : quita el archivo especificado del staging, con -r lo elimina tmb del local
-git restore : restaura un archivo a un estado anterior sin afectar el historial de commits, parametros
-            --source : para restaurar archivos a su último estado confirmado
-            --staged : para restaurar archivos del área de staging
-            --worktree : para restaurar archivos del área de trabajo
+git rm : --cached elimina el archivo especificado del staging, con -r lo elimina tmb del local
+git restore : restaura un archivo a un estado anterior sin afectar el historial de commits
 git reset : --soft regresa a un commit anterior sin quitar los cambios en staging o --hard regresa a un commit anterior borrando todo de staging.
              Regreso en el tiempo, si elimina los commits posteriores, por lo que es un punto sin regreso.
                al commit elegido. HEAD quita los archivos de staging.
