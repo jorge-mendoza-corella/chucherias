@@ -33,11 +33,6 @@ git pull : es un git fetch y un git merge al mismo tiempo
 
 
 
-algo mas
-
-
-
-
 NOTAS: 
 - cuando no se dan parametros a:
 git show : muestra los cambios en los ultimos dos commits, el actual (HEAD) y el anterior, al dar parametros como el commit id o el archivo se muestra el detalle de ese parametro
