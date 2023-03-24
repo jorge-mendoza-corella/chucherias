@@ -1,8 +1,6 @@
-esta es la primer linea del archivo, 
-ahora si es la segunda linea final
+esta es la primer linea del archivo
+segunda del primero}
 
+este sera el nuevo
 
-Tmb esto, algo ams
-otra
-
-vamos a agregar estog 
+le agrego esto solo a la nueva_rama

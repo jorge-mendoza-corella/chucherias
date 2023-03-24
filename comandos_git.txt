@@ -4,14 +4,31 @@ git commit : para mandar los cambios en staging al repositorio
 git status : muestra el estado de los archivos, pueden estar en untraked, staging o todo en master
 git show : para ver los cambios en un commit, archivo, ver cambios entre commits
 git diff : para ver la diferencia entre dos archivos, commit archivo
-git log : para ver todo el historial de cambios
+git log : para ver todo el historial de cambios, se puede agregar el parametro 
+git log --oneline : Te muestra el id commit y el título del commit.
+git log --decorate : Te muestra donde se encuentra el head point en el log.
+git log --stat : Explica el número de líneas que se cambiaron brevemente.
+git log -p : Explica el número de líneas que se cambiaron y te muestra que se cambió en el contenido.
+git log --grep="actua" : Busca los commits que cumplan tal cual está escrito entre las comillas.
+git log --grep="actua" -i : Busca los commits que cumplan sin importar mayúsculas o minúsculas.
+git log --graph --oneline --decorate : muestra los mensajes de los commits
+git log --pretty=format:"%cn hizo un commit %h el dia %cd" : muestra los mensajes de los commits
+git log --author="Jorge Mendoza" : para mostrar los commits de un usuario
+git log > log.txt : guardar los logs en un archivo txt
+git shortlog : indica que commits ha realizado un usuario
+git rm : --cached elimina el archivo especificado del staging, con -r lo elimina tmb del local
+git restore : restaura un archivo a un estado anterior sin afectar el historial de commits
+git reset : --soft regresa a un commit anterior sin quitar los cambios en staging o --hard regresa a un commit anterior borrando todo de staging.
+             Regreso en el tiempo, si elimina los commits posteriores, por lo que es un punto sin regreso.
+               al commit elegido. HEAD quita los archivos de staging.
+git checkout : para traer los cambios de un archivo(s) desde un commit anterior y para moverse ente ramas,
+               los parametros son el commit ID y el archivo. Regreso en el tiempo, no elimina los commits posteriores
+               al commit elegido.
+git clone url : se trae los archivos de master remoto al directorio de trabajo y una copia de los cambios historicos
+                al repo local.
+git push : se envia al repo remoto
+git fetch : se trae una copia del remoto a mi repo local
+git merge : hace una mezcla del repo local con mis archivos de trabajo
+git pull : es un git fetch y un git merge al mismo tiempo
 
 
-NOTAS: 
-- cuando no se dan parametros a:
-git show : muestra los cambios en el commit actual (HEAD), al dar parametros como el commit id o el archivo se muestra el detalle de ese parametro
-git log : muestra todo el historial de cambios, al dar parametros como el commit id o el archivo se muestra el detalle de ese parametro
-git diff se puede usar con lo siguientes parametros:
-    git diff --cached : muestra la diferencia entre el archivo local y el archivo en staging
-    git diff --staged : muestra la diferencia entre el archivo en staging y el archivo en master
-    git diff HEAD: muestra la diferencia entre el archivo local y el archivo en master
