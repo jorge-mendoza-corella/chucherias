@@ -11,6 +11,9 @@ git log --stat : Explica el número de líneas que se cambiaron brevemente.
 git log -p : Explica el número de líneas que se cambiaron y te muestra que se cambió en el contenido.
 git log --grep="actua" : Busca los commits que cumplan tal cual está escrito entre las comillas.
 git log --grep="actua" -i : Busca los commits que cumplan sin importar mayúsculas o minúsculas.
+git log --graph --oneline --decorate : muestra los mensajes de los commits
+git log --pretty=format:"%cn hizo un commit %h el dia %cd" : muestra los mensajes de los commits
+git log --author="Jorge Mendoza" : para mostrar los commits de un usuario
 git log > log.txt : guardar los logs en un archivo txt
 git shortlog : indica que commits ha realizado un usuario
 git rm : --cached elimina el archivo especificado del staging, con -r lo elimina tmb del local
@@ -21,9 +24,14 @@ git reset : --soft regresa a un commit anterior sin quitar los cambios en stagin
 git checkout : para traer los cambios de un archivo(s) desde un commit anterior y para moverse ente ramas,
                los parametros son el commit ID y el archivo. Regreso en el tiempo, no elimina los commits posteriores
                al commit elegido.
-git log --graph --oneline --decorate : muestra los mensajes de los commits
-git log --pretty=format:"%cn hizo un commit %h el dia %cd" : muestra los mensajes de los commits
-git log --author="Jorge Mendoza" : para mostrar los commits de un usuario
+git clone url : se trae los archivos de master remoto al directorio de trabajo y una copia de los cambios historicos
+                al repo local.
+git push : se envia al repo remoto
+git fetch : se trae una copia del remoto a mi repo local
+git merge : hace una mezcla del repo local con mis archivos de trabajo
+git pull : es un git fetch y un git merge al mismo tiempo
+
+
 
 
 
