@@ -30,7 +30,9 @@ git push : se envia al repo remoto
 git fetch : se trae una copia del remoto a mi repo local
 git merge : hace una mezcla del repo local con mis archivos de trabajo
 git pull : es un git fetch y un git merge al mismo tiempo
-git remote add origin [el link del remoto]
+git remote add origin [el link del remoto] : para conectar con un remoto
+git remote :  nos muestra los remotes que tenemos conectados
+git -v : nos muestra hacia donde podemos conectarnos hacia ambas direcciones
 
 
 
