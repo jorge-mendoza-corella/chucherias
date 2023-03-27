@@ -35,6 +35,12 @@ git remote set-url origin [el link del remoto] : permite setear un nuevo remoto
 git remote :  nos muestra los remotes que tenemos conectados
 git -v : nos muestra hacia donde podemos conectarnos hacia ambas direcciones
 
+Generacion de llaves publica y privada
+ssh-keygen -t rsa -b 4096 -C [email] : genera la llave
+Get-Service ssh-agent : revisa si el servicio ssh esta corriedo
+ssh-add [ruta de la llave id_rsa]
+
+Se copia la llave publica y se agrega en github para asi estar conectados.
 
 
 NOTAS: 
