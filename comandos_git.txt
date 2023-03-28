@@ -26,6 +26,7 @@ git checkout : para traer los cambios de un archivo(s) desde un commit anterior 
                al commit elegido.
 git clone url : se trae los archivos de master remoto al directorio de trabajo y una copia de los cambios historicos
                 al repo local. Para esto no tenemos que iniciar con init, simplemente clonamos.
+fok nos hace una copia en el remoto de un proyecto que querramos en donde no somos colaboradores.
 git branch [name] : crea una nueva rama                
 git branch -m [name] : renombra la rama actual
 git branch -d [name] : borra la rama
