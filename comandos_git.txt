@@ -30,6 +30,9 @@ fok nos hace una copia en el remoto de un proyecto que querramos en donde no som
 git branch [name] : crea una nueva rama                
 git branch -m [name] : renombra la rama actual
 git branch -d [name] : borra la rama
+git branch -r : muestra las ramas remotas
+git branch -a : muestra todas las ramas 
+git push origin --delete mi-rama : elimina la rama remota mi-rama
 git push : se envia al repo remoto
 git fetch : se trae una copia del remoto a mi repo local
 git merge : hace una mezcla del repo local con mis archivos de trabajo
@@ -59,6 +62,11 @@ git clean -f : borra los archivos que se listaron con el comando de arriba
 git cherry-pick [ID_commit] : trae un commit viejo de otra rama a la rama actual
 git reflow : te da una historia de absolutamente todo
 git commit --amend : agrega un nuevo cambio a un commit anterior
+git grep -n algo : sirve para buscar dentro de los archivos de codigo, con -c hace el conteo
+git log -S "aglo" : sirve para buscar en el log de commits  
+git shortlog -sn : muestra cuantos commits ha hecho cada persona 
+git shortlog -sn --all --no-merges : lo anterior sin merges
+git blame -c [archivo] -L 15,18: da info de los cambios en un archivo en determinadas lines
 
 Generacion de llaves publica y privada
 ssh-keygen -t rsa -b 4096 -C [email] : genera la llave
