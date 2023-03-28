@@ -25,7 +25,7 @@ git checkout : para traer los cambios de un archivo(s) desde un commit anterior 
                los parametros son el commit ID y el archivo. Regreso en el tiempo, no elimina los commits posteriores
                al commit elegido.
 git clone url : se trae los archivos de master remoto al directorio de trabajo y una copia de los cambios historicos
-                al repo local.
+                al repo local. Para esto no tenemos que iniciar con init, simplemente clonamos.
 git branch [name] : crea una nueva rama                
 git branch -m [name] : renombra la rama actual
 git push : se envia al repo remoto
