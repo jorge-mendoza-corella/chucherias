@@ -8,3 +8,5 @@ le agrego esto solo a la nueva_rama
 
 YA ESTO ES LO NUEVO
 quiere hacer que esto se vaya directo al main
+
+Aqui ahora si se debe bloquear
