@@ -37,6 +37,15 @@ git remote add origin [el link del remoto] : para conectar con un remoto
 git remote set-url origin [el link del remoto] : permite setear un nuevo remoto
 git remote :  nos muestra los remotes que tenemos conectados
 git -v : nos muestra hacia donde podemos conectarnos hacia ambas direcciones
+git config --global alias.verTodo "log --graph" : con esto lo que haces es crear un alias en git y asi solo lo llamas como git alias
+git tag -a [nombre] -m "[mensaje]" [referencia ID commit]
+git tag : list de todos los tags
+git tag -d algoChafa : borra la tag localmente
+git show-ref --tags : muestra la lista de los tags, con sus referencias de ID's
+git push origin --tags : para mandar los tags al remoto
+git push origin :refs/tags/algoChafa : envia la referencia de que ya el tag no existe, cuando ya se ha borrado localmente
+gitk : muestra la historia de cambios de gforma grafica
+git show-branch --all : muestra la historia de cambios
 
 Generacion de llaves publica y privada
 ssh-keygen -t rsa -b 4096 -C [email] : genera la llave
