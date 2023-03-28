@@ -28,6 +28,7 @@ git clone url : se trae los archivos de master remoto al directorio de trabajo y
                 al repo local. Para esto no tenemos que iniciar con init, simplemente clonamos.
 git branch [name] : crea una nueva rama                
 git branch -m [name] : renombra la rama actual
+git branch -d [name] : borra la rama
 git push : se envia al repo remoto
 git fetch : se trae una copia del remoto a mi repo local
 git merge : hace una mezcla del repo local con mis archivos de trabajo
@@ -44,6 +45,7 @@ git tag -d algoChafa : borra la tag localmente
 git show-ref --tags : muestra la lista de los tags, con sus referencias de ID's
 git push origin --tags : para mandar los tags al remoto
 git push origin :refs/tags/algoChafa : envia la referencia de que ya el tag no existe, cuando ya se ha borrado localmente
+git push origin --delete [rama] : para borrar una rama del remoto
 gitk : muestra la historia de cambios de gforma grafica
 git show-branch --all : muestra la historia de cambios
 
