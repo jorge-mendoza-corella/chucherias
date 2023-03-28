@@ -49,6 +49,7 @@ git push origin :refs/tags/algoChafa : envia la referencia de que ya el tag no e
 git push origin --delete [rama] : para borrar una rama del remoto
 gitk : muestra la historia de cambios de gforma grafica
 git show-branch --all : muestra la historia de cambios
+git rebase : sirve para pegar una rama en otra
 
 Generacion de llaves publica y privada
 ssh-keygen -t rsa -b 4096 -C [email] : genera la llave
