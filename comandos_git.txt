@@ -50,6 +50,10 @@ git push origin --delete [rama] : para borrar una rama del remoto
 gitk : muestra la historia de cambios de gforma grafica
 git show-branch --all : muestra la historia de cambios
 git rebase : sirve para pegar una rama en otra
+git stash : para hacer como un screen shot y regresarme al ultimo commit
+git stash list : muestre todos los tages 
+git stash pop : regresa al stash
+git stash branch [nombre] : para pasar a una rama el satash
 
 Generacion de llaves publica y privada
 ssh-keygen -t rsa -b 4096 -C [email] : genera la llave
