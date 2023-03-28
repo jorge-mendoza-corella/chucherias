@@ -11,7 +11,7 @@ git log --stat : Explica el número de líneas que se cambiaron brevemente.
 git log -p : Explica el número de líneas que se cambiaron y te muestra que se cambió en el contenido.
 git log --grep="actua" : Busca los commits que cumplan tal cual está escrito entre las comillas.
 git log --grep="actua" -i : Busca los commits que cumplan sin importar mayúsculas o minúsculas.
-git log --graph --oneline --decorate : muestra los mensajes de los commits
+git log --all --graph --oneline --decorate : muestra los mensajes de los commits en un formato bonito y comprimido
 git log --pretty=format:"%cn hizo un commit %h el dia %cd" : muestra los mensajes de los commits
 git log --author="Jorge Mendoza" : para mostrar los commits de un usuario
 git log > log.txt : guardar los logs en un archivo txt
