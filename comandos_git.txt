@@ -53,7 +53,12 @@ git rebase : sirve para pegar una rama en otra
 git stash : para hacer como un screen shot y regresarme al ultimo commit
 git stash list : muestre todos los tages 
 git stash pop : regresa al stash
-git stash branch [nombre] : para pasar a una rama el satash
+git stash branch [nombre] : para pasar a una rama el stash
+git clean --dry-run : para ver los archivos que se quieren limpiar, porque no los necesitamos
+git clean -f : borra los archivos que se listaron con el comando de arriba
+git cherry-pick [ID_commit] : trae un commit viejo de otra rama a la rama actual
+git reflow : te da una historia de absolutamente todo
+git commit --amend : agrega un nuevo cambio a un commit anterior
 
 Generacion de llaves publica y privada
 ssh-keygen -t rsa -b 4096 -C [email] : genera la llave
