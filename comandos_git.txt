@@ -70,7 +70,8 @@ git blame -c [archivo] -L 15,18: da info de los cambios en un archivo en determi
 
 Generacion de llaves publica y privada
 ssh-keygen -t rsa -b 4096 -C [email] : genera la llave
-Get-Service ssh-agent : revisa si el servicio ssh esta corriedo
+Get-Service ssh-agent : revisa si el servicio ssh esta corriedo en ubuntu: ssh-agent
+eval "$(ssh-agent -s)" para iniciar otra sesion del ssh agent en ubuntu
 ssh-add [ruta de la llave id_rsa]
 cat ~/.ssh/id_rsa.pub : para copiar la llave y se agrega en github para asi estar conectados.
 
